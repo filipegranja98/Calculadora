@@ -18,6 +18,12 @@
         const resultado = document.getElementById('resultado').innerHTML;
         if(resultado){
             document.getElementById('resultado').innerHTML = eval(resultado);
+        }else{
+            document.getElementById('resultado').innerHTML = 'Insira dados';
+            setTimeout(
+                () => (document.getElementById("resultado").innerHTML = ""),
+                1000
+              );
         }
     }
     
